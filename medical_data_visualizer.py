@@ -30,7 +30,7 @@ def draw_cat_plot():
     draw_cat_plot_chart = sns.catplot(x="variable", col="cardio", hue="value", data=df_cat, kind="count").set_axis_labels("variable", "total")
 
     # 8
-    fig = draw_cat_plot_chart
+    fig = draw_cat_plot_chart.fig
 
     # 9
     fig.savefig('catplot.png')
